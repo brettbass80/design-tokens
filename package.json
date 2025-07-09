@@ -5,7 +5,9 @@
   "main": "build/js/tokens.js",
   "types": "build/types/tokens.d.ts",
   "files": [
-    "build/*/",
+    "build/**/*",
+    "build/css/**/*",
+    "build/js/**/*",
     "README.md",
     "LICENSE"
   ],
