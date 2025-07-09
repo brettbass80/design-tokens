@@ -1,5 +1,5 @@
 {
-  "name": "@brettbass80/design-tokens",
+  "name": "@bbass80/design-tokens",
   "version": "1.0.0",
   "description": "Design tokens for your organization",
   "main": "build/js/tokens.js",
