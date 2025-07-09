@@ -1,0 +1,16 @@
+# Dependencies
+node_modules/
+
+# Build artifacts (comment out if you want to commit built files)
+# build/
+
+# Logs
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE files
+.vscode/
+.idea/

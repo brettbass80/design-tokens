@@ -8,8 +8,8 @@
     "README.md"
   ],
   "scripts": {
-    "build": "style-dictionary build",
-    "watch": "style-dictionary build --watch",
+    "build": "style-dictionary build --config ./config/style-dictionary.config.js",
+    "watch": "style-dictionary build --config ./config/style-dictionary.config.js --watch",
     "clean": "rm -rf build/",
     "prepublish": "npm run clean && npm run build"
   },
