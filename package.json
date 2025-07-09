@@ -1,0 +1,26 @@
+{
+  "name": "@brettbass80/design-tokens",
+  "version": "1.0.0",
+  "description": "Design tokens for ScoreVision",
+  "main": "build/js/tokens.js",
+  "files": [
+    "build/**/*",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "style-dictionary build",
+    "watch": "style-dictionary build --watch",
+    "clean": "rm -rf build/",
+    "prepublish": "npm run clean && npm run build"
+  },
+  "devDependencies": {
+    "style-dictionary": "^3.9.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brettbass80/design-tokens.git"
+  },
+  "keywords": ["design-tokens", "style-dictionary", "css", "javascript"],
+  "author": "Your Organization",
+  "license": "MIT"
+}
