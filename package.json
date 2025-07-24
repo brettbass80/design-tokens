@@ -5,10 +5,10 @@
   "main": "config.js",
   "exports": {
     ".": "./config.js",
-    "./css": "./dist/css/variables.css",
-    "./scss": "./dist/scss/variables.scss",
-    "./js": "./dist/js/tokens.js",
-    "./react-native": "./dist/react-native/tokens.js"
+    "./css": "./build/css/variables.css",
+    "./scss": "./build/scss/variables.scss",
+    "./js": "./build/js/tokens.js",
+    "./react-native": "./build/react-native/tokens.js"
   },
   "files": [
     "config.js",
