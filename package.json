@@ -1,45 +1,57 @@
 {
   "name": "@bbass80/design-tokens",
-  "version": "1.0.2",
-  "description": "Design tokens for your organization",
-  "main": "build/js/tokens.js",
-  "types": "build/types/tokens.d.ts",
+  "version": "1.0.0",
+  "description": "Design tokens package with Style Dictionary transforms for DTCG format",
+  "main": "config.js",
+  "exports": {
+    ".": "./config.js",
+    "./css": "./dist/css/variables.css",
+    "./scss": "./dist/scss/variables.scss",
+    "./js": "./dist/js/tokens.js",
+    "./react-native": "./dist/react-native/tokens.js"
+  },
   "files": [
-    "build/**/*",
-    "build/css/**/*",
-    "build/js/**/*",
-    "README.md",
-    "LICENSE"
+    "config.js",
+    "dist/",
+    "tokens.json",
+    "README.md"
   ],
   "scripts": {
-    "build": "style-dictionary build",
-    "prepublishOnly": "npm run build",
-    "version": "npm run build && git add -A",
-    "postversion": "git push && git push --tags"
+    "build": "node config.js",
+    "build:css": "node -e \"const {StyleDictionary, config} = require('./config.js'); const sd = StyleDictionary.extend(config); sd.buildPlatform('css');\"",
+    "build:scss": "node -e \"const {StyleDictionary, config} = require('./config.js'); const sd = StyleDictionary.extend(config); sd.buildPlatform('scss');\"",
+    "build:js": "node -e \"const {StyleDictionary, config} = require('./config.js'); const sd = StyleDictionary.extend(config); sd.buildPlatform('js');\"",
+    "build:react-native": "node -e \"const {StyleDictionary, config} = require('./config.js'); const sd = StyleDictionary.extend(config); sd.buildPlatform('reactNative');\"",
+    "clean": "rm -rf build/ dist/",
+    "prepublishOnly": "npm run clean && npm run build",
+    "test": "echo \"No tests specified\" && exit 0"
   },
+  "dependencies": {
+    "style-dictionary": "^3.8.0"
+  },
+  "devDependencies": {
+    "@types/node": "^18.0.0"
+  },
+  "keywords": [
+    "design-tokens",
+    "style-dictionary",
+    "dtcg",
+    "css",
+    "scss",
+    "react-native",
+    "design-system"
+  ],
+  "author": "Your Name <your.email@example.com>",
+  "license": "MIT",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/brettbass80/design-tokens.git"
   },
-  "keywords": [
-    "design-tokens",
-    "design-system",
-    "css-variables",
-    "scss",
-    "javascript",
-    "react-native",
-    "figma"
-  ],
-  "author": "Your Organization <email@yourorg.com>",
-  "license": "MIT",
-  "homepage": "https://github.com/author/design-tokens#readme",
   "bugs": {
-    "url": "https://github.com/author/design-tokens/issues"
+    "url": "https://github.com/brettbass80/design-tokens/issues"
   },
-  "devDependencies": {
-    "style-dictionary": "^3.9.0"
-  },
-  "publishConfig": {
-    "access": "public"
+  "homepage": "https://github.com/brettbass80/design-tokens#readme",
+  "engines": {
+    "node": ">=14.0.0"
   }
 }

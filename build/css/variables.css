@@ -1,50 +1,719 @@
 /**
  * Design Tokens - CSS Variables
  * Generated from DTCG format tokens
- * Do not edit directly, update tokens in Figma Token Studio
+ * Do not edit directly
  */
 
 :root {
-  /* Primary color - lightest shade */
-  --global-colors-primary-50: #eff6ff;
-  /* Primary color - base shade */
-  --global-colors-primary-500: #3b82f6;
-  /* Primary color - darkest shade */
-  --global-colors-primary-900: #1e3a8a;
-  /* Slate color - 600 shade */
-  --global-colors-slate-600: #475569;
-  /* Slate color - 900 shade */
-  --global-colors-slate-900: #0f172a;
-  /* Primary text color */
-  --global-colors-text-primary: #0f172a;
-  /* Secondary text color */
-  --global-colors-text-secondary: #475569;
-  /* Extra small spacing */
-  --global-spacing-xs: 4px;
-  /* Small spacing */
-  --global-spacing-sm: 8px;
-  /* Medium spacing */
-  --global-spacing-md: 16px;
-  /* Large spacing */
-  --global-spacing-lg: 24px;
-  /* Extra large spacing */
-  --global-spacing-xl: 32px;
-  /* Extra small font size */
-  --global-typography-fontsize-xs: 12px;
-  /* Small font size */
-  --global-typography-fontsize-sm: 14px;
-  /* Base font size */
-  --global-typography-fontsize-base: 16px;
-  /* Large font size */
-  --global-typography-fontsize-lg: 18px;
-  /* Extra large font size */
-  --global-typography-fontsize-xl: 20px;
-  /* Normal font weight */
-  --global-typography-fontweight-normal: 400;
-  /* Medium font weight */
-  --global-typography-fontweight-medium: 500;
-  /* Semibold font weight */
-  --global-typography-fontweight-semibold: 600;
-  /* Bold font weight */
-  --global-typography-fontweight-bold: 700;
+  /* brand primary blue for all themes - primitive palette */
+  --color-palette-brandcore-50: #E5F4FB;
+  /* brand primary blue for all themes - primitive palette */
+  --color-palette-brandcore-100: #CAE5F2;
+  /* brand primary blue for all themes - primitive palette */
+  --color-palette-brandcore-200: #98C9E2;
+  /* brand primary blue for all themes - primitive palette */
+  --color-palette-brandcore-300: #60A9CD;
+  /* brand primary blue for all themes - primitive palette */
+  --color-palette-brandcore-400: #338DB7;
+  /* brand primary blue for all themes - primitive palette */
+  --color-palette-brandcore-500: #057AA8;
+  /* brand primary blue for all themes - primitive palette */
+  --color-palette-brandcore-600: #04688F;
+  /* brand primary blue for all themes - primitive palette */
+  --color-palette-brandcore-700: #045777;
+  /* brand primary blue for all themes - primitive palette */
+  --color-palette-brandcore-800: #034159;
+  /* brand primary blue for all themes - primitive palette */
+  --color-palette-brandcore-900: #023246;
+  /* brand accent green for ScoreVision theme - primitive palette */
+  --color-palette-brandaccentsv-50: #FAFBEA;
+  /* brand accent green for ScoreVision theme - primitive palette */
+  --color-palette-brandaccentsv-100: #F3F6CC;
+  /* brand accent green for ScoreVision theme - primitive palette */
+  --color-palette-brandaccentsv-200: #E9F0A3;
+  /* brand accent green for ScoreVision theme - primitive palette */
+  --color-palette-brandaccentsv-300: #DEE878;
+  /* brand accent green for ScoreVision theme - primitive palette */
+  --color-palette-brandaccentsv-400: #D4E150;
+  /* brand accent green for ScoreVision theme - primitive palette */
+  --color-palette-brandaccentsv-500: #CBDB29;
+  /* brand accent green for ScoreVision theme - primitive palette */
+  --color-palette-brandaccentsv-600: #ADBA23;
+  /* brand accent green for ScoreVision theme - primitive palette */
+  --color-palette-brandaccentsv-700: #88921B;
+  /* brand accent green for ScoreVision theme - primitive palette */
+  --color-palette-brandaccentsv-800: #646C14;
+  /* brand accent green for ScoreVision theme - primitive palette */
+  --color-palette-brandaccentsv-900: #474E0E;
+  /* brand accent orange for CampusVision theme - primitive palette */
+  --color-palette-brandaccentcv-50: #FEF0E8;
+  /* brand accent orange for CampusVision theme - primitive palette */
+  --color-palette-brandaccentcv-100: #FDDBC7;
+  /* brand accent orange for CampusVision theme - primitive palette */
+  --color-palette-brandaccentcv-200: #FCBE9B;
+  /* brand accent orange for CampusVision theme - primitive palette */
+  --color-palette-brandaccentcv-300: #FBA06C;
+  /* brand accent orange for CampusVision theme - primitive palette */
+  --color-palette-brandaccentcv-400: #F98340;
+  /* brand accent orange for CampusVision theme - primitive palette */
+  --color-palette-brandaccentcv-500: #F86816;
+  /* brand accent orange for CampusVision theme - primitive palette */
+  --color-palette-brandaccentcv-600: #D35813;
+  /* brand accent orange for CampusVision theme - primitive palette */
+  --color-palette-brandaccentcv-700: #B04A10;
+  /* brand accent orange for CampusVision theme - primitive palette */
+  --color-palette-brandaccentcv-800: #83370C;
+  /* brand accent orange for CampusVision theme - primitive palette */
+  --color-palette-brandaccentcv-900: #622909;
+  /* pink utility color - primitive palette */
+  --color-palette-pink-50: #FCECF8;
+  /* pink utility color - primitive palette */
+  --color-palette-pink-100: #F8D2EF;
+  /* pink utility color - primitive palette */
+  --color-palette-pink-200: #F3B4E4;
+  /* pink utility color - primitive palette */
+  --color-palette-pink-300: #ED8DD7;
+  /* pink utility color - primitive palette */
+  --color-palette-pink-400: #E664C8;
+  /* pink utility color - primitive palette */
+  --color-palette-pink-500: #E142BC;
+  /* pink utility color - primitive palette */
+  --color-palette-pink-600: #BF38A0;
+  /* pink utility color - primitive palette */
+  --color-palette-pink-700: #A02F85;
+  /* pink utility color - primitive palette */
+  --color-palette-pink-800: #7A2466;
+  /* pink utility color - primitive palette */
+  --color-palette-pink-900: #5E1C4F;
+  /* purple utility color - primitive palette */
+  --color-palette-purple-50: #F4EDFD;
+  /* purple utility color - primitive palette */
+  --color-palette-purple-100: #E7D7F9;
+  /* purple utility color - primitive palette */
+  --color-palette-purple-200: #D4B6F6;
+  /* purple utility color - primitive palette */
+  --color-palette-purple-300: #BC8FF0;
+  /* purple utility color - primitive palette */
+  --color-palette-purple-400: #A76DEB;
+  /* purple utility color - primitive palette */
+  --color-palette-purple-500: #944DE7;
+  /* purple utility color - primitive palette */
+  --color-palette-purple-600: #7E41C4;
+  /* purple utility color - primitive palette */
+  --color-palette-purple-700: #6937A4;
+  /* purple utility color - primitive palette */
+  --color-palette-purple-800: #502A7E;
+  /* purple utility color - primitive palette */
+  --color-palette-purple-900: #3B1F5C;
+  /* blue utility color - primitive palette */
+  --color-palette-blue-50: #E9F1FE;
+  /* blue utility color - primitive palette */
+  --color-palette-blue-100: #CBDCFC;
+  /* blue utility color - primitive palette */
+  --color-palette-blue-200: #A1C1FA;
+  /* blue utility color - primitive palette */
+  --color-palette-blue-300: #76A4F6;
+  /* blue utility color - primitive palette */
+  --color-palette-blue-400: #4D88F4;
+  /* blue utility color - primitive palette */
+  --color-palette-blue-500: #266EF1;
+  /* blue utility color - primitive palette */
+  --color-palette-blue-600: #205ECD;
+  /* blue utility color - primitive palette */
+  --color-palette-blue-700: #1B4EAB;
+  /* blue utility color - primitive palette */
+  --color-palette-blue-800: #143B7F;
+  /* blue utility color - primitive palette */
+  --color-palette-blue-900: #102E65;
+  /* teal utility color - primitive palette */
+  --color-palette-teal-50: #E6F4F6;
+  /* teal utility color - primitive palette */
+  --color-palette-teal-100: #C2E6E9;
+  /* teal utility color - primitive palette */
+  --color-palette-teal-200: #91D1D8;
+  /* teal utility color - primitive palette */
+  --color-palette-teal-300: #65BFC8;
+  /* teal utility color - primitive palette */
+  --color-palette-teal-400: #2FABB7;
+  /* teal utility color - primitive palette */
+  --color-palette-teal-500: #0095A4;
+  /* teal utility color - primitive palette */
+  --color-palette-teal-600: #007F8B;
+  /* teal utility color - primitive palette */
+  --color-palette-teal-700: #006A74;
+  /* teal utility color - primitive palette */
+  --color-palette-teal-800: #004B52;
+  /* teal utility color - primitive palette */
+  --color-palette-teal-900: #003C42;
+  /* green utility color - primitive palette */
+  --color-palette-green-50: #E6F4EF;
+  /* green utility color - primitive palette */
+  --color-palette-green-100: #C2E5D8;
+  /* green utility color - primitive palette */
+  --color-palette-green-200: #8FD3BA;
+  /* green utility color - primitive palette */
+  --color-palette-green-300: #5EBC9A;
+  /* green utility color - primitive palette */
+  --color-palette-green-400: #2EA77B;
+  /* green utility color - primitive palette */
+  --color-palette-green-500: #00945E;
+  /* green utility color - primitive palette */
+  --color-palette-green-600: #007E50;
+  /* green utility color - primitive palette */
+  --color-palette-green-700: #006943;
+  /* green utility color - primitive palette */
+  --color-palette-green-800: #00472E;
+  /* green utility color - primitive palette */
+  --color-palette-green-900: #003823;
+  /* yellow utility color - primitive palette */
+  --color-palette-yellow-50: #FCF6EA;
+  /* yellow utility color - primitive palette */
+  --color-palette-yellow-100: #F9EACD;
+  /* yellow utility color - primitive palette */
+  --color-palette-yellow-200: #F4DAA5;
+  /* yellow utility color - primitive palette */
+  --color-palette-yellow-300: #EFC87B;
+  /* yellow utility color - primitive palette */
+  --color-palette-yellow-400: #EAB854;
+  /* yellow utility color - primitive palette */
+  --color-palette-yellow-500: #E5A82E;
+  /* yellow utility color - primitive palette */
+  --color-palette-yellow-600: #C38F27;
+  /* yellow utility color - primitive palette */
+  --color-palette-yellow-700: #9D7320;
+  /* yellow utility color - primitive palette */
+  --color-palette-yellow-800: #704B00;
+  /* yellow utility color - primitive palette */
+  --color-palette-yellow-900: #573A00;
+  /* red utility color - primitive palette */
+  --color-palette-red-50: #FBE9EC;
+  /* red utility color - primitive palette */
+  --color-palette-red-100: #F5CCD3;
+  /* red utility color - primitive palette */
+  --color-palette-red-200: #EFA4B0;
+  /* red utility color - primitive palette */
+  --color-palette-red-300: #E37184;
+  /* red utility color - primitive palette */
+  --color-palette-red-400: #DA465E;
+  /* red utility color - primitive palette */
+  --color-palette-red-500: #D21D3B;
+  /* red utility color - primitive palette */
+  --color-palette-red-600: #B31932;
+  /* red utility color - primitive palette */
+  --color-palette-red-700: #95152A;
+  /* red utility color - primitive palette */
+  --color-palette-red-800: #701020;
+  /* red utility color - primitive palette */
+  --color-palette-red-900: #550C18;
+  /* gray utility color - primitive palette */
+  --color-palette-gray-50: #FCFCFD;
+  /* gray utility color - primitive palette */
+  --color-palette-gray-100: #F8F9FA;
+  /* gray utility color - primitive palette */
+  --color-palette-gray-150: #F3F4F6;
+  /* gray utility color - primitive palette */
+  --color-palette-gray-200: #EDEFF2;
+  /* gray utility color - primitive palette */
+  --color-palette-gray-250: #E7EAEE;
+  /* gray utility color - primitive palette */
+  --color-palette-gray-300: #DFE2E7;
+  /* gray utility color - primitive palette */
+  --color-palette-gray-350: #D6DBE1;
+  /* gray utility color - primitive palette */
+  --color-palette-gray-400: #CED3DA;
+  /* gray utility color - primitive palette */
+  --color-palette-gray-450: #BDC3CB;
+  /* gray utility color - primitive palette */
+  --color-palette-gray-500: #ADB4BD;
+  /* gray utility color - primitive palette */
+  --color-palette-gray-550: #89909A;
+  /* gray utility color - primitive palette */
+  --color-palette-gray-600: #6C737D;
+  /* gray utility color - primitive palette */
+  --color-palette-gray-650: #596069;
+  /* gray utility color - primitive palette */
+  --color-palette-gray-700: #494F57;
+  /* gray utility color - primitive palette */
+  --color-palette-gray-750: #3F444B;
+  /* gray utility color - primitive palette */
+  --color-palette-gray-800: #343940;
+  /* gray utility color - primitive palette */
+  --color-palette-gray-850: #2C3035;
+  /* gray utility color - primitive palette */
+  --color-palette-gray-900: #212429;
+  /* gray utility color - primitive palette */
+  --color-palette-gray-950: #14161A;
+  /* white utility color - primitive palette */
+  --color-palette-white: #ffffff;
+  /* black utility color - primitive palette */
+  --color-palette-black: #000000;
+  --color-background-body-le: #ffffff;
+  --color-background-body-de: #212429;
+  --color-background-secondary-le: #E7EAEE;
+  --color-background-secondary-de: #343940;
+  --color-background-tertiary-le: #F8F9FA;
+  --color-background-tertiary-de: #2C3035;
+  --color-background-core-default-le: #057AA8;
+  --color-background-core-default-de: #057AA8;
+  --color-background-core-hover-le: #04688F;
+  --color-background-core-hover-de: #04688F;
+  --color-background-core-active-le: #045777;
+  --color-background-core-active-de: #045777;
+  --color-background-coresubtle-default-le: #E5F4FB;
+  --color-background-coresubtle-default-de: #023246;
+  --color-background-coresubtle-hover-le: #CAE5F2;
+  --color-background-coresubtle-hover-de: #034159;
+  --color-background-coresubtle-active-le: #98C9E2;
+  --color-background-coresubtle-active-de: #045777;
+  --color-background-success-default-le: #007E50;
+  --color-background-success-default-de: #007E50;
+  --color-background-success-hover-le: #006943;
+  --color-background-success-hover-de: #006943;
+  --color-background-success-active-le: #00472E;
+  --color-background-success-active-de: #00472E;
+  --color-background-successsubtle-default-le: #E6F4EF;
+  --color-background-successsubtle-default-de: #003823;
+  --color-background-successsubtle-hover-le: #C2E5D8;
+  --color-background-successsubtle-hover-de: #00472E;
+  --color-background-successsubtle-active-le: #8FD3BA;
+  --color-background-successsubtle-active-de: #006943;
+  --color-background-danger-default-le: #D21D3B;
+  --color-background-danger-default-de: #D21D3B;
+  --color-background-danger-hover-le: #B31932;
+  --color-background-danger-hover-de: #B31932;
+  --color-background-danger-active-le: #95152A;
+  --color-background-danger-active-de: #95152A;
+  --color-background-dangersubtle-default-le: #FBE9EC;
+  --color-background-dangersubtle-default-de: #550C18;
+  --color-background-dangersubtle-hover-le: #F5CCD3;
+  --color-background-dangersubtle-hover-de: #701020;
+  --color-background-dangersubtle-active-le: #EFA4B0;
+  --color-background-dangersubtle-active-de: #95152A;
+  --color-background-warning-default-le: #E5A82E;
+  --color-background-warning-default-de: #E5A82E;
+  --color-background-warning-hover-le: #C38F27;
+  --color-background-warning-hover-de: #C38F27;
+  --color-background-warning-active-le: #9D7320;
+  --color-background-warning-active-de: #9D7320;
+  --color-background-warningsubtle-default-le: #FCF6EA;
+  --color-background-warningsubtle-default-de: #573A00;
+  --color-background-warningsubtle-hover-le: #F9EACD;
+  --color-background-warningsubtle-hover-de: #704B00;
+  --color-background-warningsubtle-active-le: #F4DAA5;
+  --color-background-warningsubtle-active-de: #9D7320;
+  --color-background-info-default-le: #057AA8;
+  --color-background-info-default-de: #057AA8;
+  --color-background-info-hover-le: #04688F;
+  --color-background-info-hover-de: #04688F;
+  --color-background-info-active-le: #045777;
+  --color-background-info-active-de: #045777;
+  --color-background-infosubtle-default-le: #E5F4FB;
+  --color-background-infosubtle-default-de: #023246;
+  --color-background-infosubtle-hover-le: #CAE5F2;
+  --color-background-infosubtle-hover-de: #034159;
+  --color-background-infosubtle-active-le: #98C9E2;
+  --color-background-infosubtle-active-de: #045777;
+  --color-background-lightsubtle-default-le: #FCFCFD;
+  --color-background-lightsubtle-default-de: #2C3035;
+  --color-background-lightsubtle-hover-le: #F8F9FA;
+  --color-background-lightsubtle-hover-de: #343940;
+  --color-background-lightsubtle-active-le: #EDEFF2;
+  --color-background-lightsubtle-active-de: #3F444B;
+  --color-background-darksubtle-default-le: #CED3DA;
+  --color-background-darksubtle-default-de: #14161A;
+  --color-background-darksubtle-hover-le: #BDC3CB;
+  --color-background-darksubtle-hover-de: #212429;
+  --color-background-darksubtle-active-le: #ADB4BD;
+  --color-background-darksubtle-active-de: #2C3035;
+  --color-background-brand-default-le: #023246;
+  --color-background-brand-default-de: #14161A;
+  --color-background-brand-hover-le: #034159;
+  --color-background-brand-hover-de: #212429;
+  --color-background-brand-active-le: #045777;
+  --color-background-brand-active-de: #343940;
+  --color-background-accentsv-default-le: #CBDB29;
+  --color-background-accentsv-default-de: #CBDB29;
+  --color-background-accentsv-hover-le: #ADBA23;
+  --color-background-accentsv-hover-de: #ADBA23;
+  --color-background-accentsv-active-le: #88921B;
+  --color-background-accentsv-active-de: #88921B;
+  --color-background-accentcv-default-le: #F86816;
+  --color-background-accentcv-default-de: #F86816;
+  --color-background-accentcv-hover-le: #D35813;
+  --color-background-accentcv-hover-de: #D35813;
+  --color-background-accentcv-active-le: #B04A10;
+  --color-background-accentcv-active-de: #B04A10;
+  --color-text-body-le: #212429;
+  --color-text-body-de: #DFE2E7;
+  --color-text-secondary-le: #596069;
+  --color-text-secondary-de: #ADB4BD;
+  --color-text-tertiary-le: #89909A;
+  --color-text-tertiary-de: #89909A;
+  --color-text-oncore-le: #ffffff;
+  --color-text-oncore-de: #ffffff;
+  --color-text-onsuccess-le: #ffffff;
+  --color-text-onsuccess-de: #ffffff;
+  --color-text-onwarning-le: #212429;
+  --color-text-onwarning-de: #212429;
+  --color-text-ondanger-le: #ffffff;
+  --color-text-ondanger-de: #ffffff;
+  --color-text-oninfo-le: #ffffff;
+  --color-text-oninfo-de: #ffffff;
+  --color-text-oncoresubtle-le: #045777;
+  --color-text-oncoresubtle-de: #98C9E2;
+  --color-text-onsuccesssubtle-le: #006943;
+  --color-text-onsuccesssubtle-de: #8FD3BA;
+  --color-text-onwarningsubtle-le: #704B00;
+  --color-text-onwarningsubtle-de: #F4DAA5;
+  --color-text-ondangersubtle-le: #95152A;
+  --color-text-ondangersubtle-de: #F5CCD3;
+  --color-text-onlightsubtle-le: #494F57;
+  --color-text-onlightsubtle-de: #F8F9FA;
+  --color-text-ondarksubtle-le: #494F57;
+  --color-text-ondarksubtle-de: #DFE2E7;
+  --color-text-oninfosubtle-le: #045777;
+  --color-text-oninfosubtle-de: #98C9E2;
+  --color-text-success-le: #007E50;
+  --color-text-success-de: #5EBC9A;
+  --color-text-core-le: #04688F;
+  --color-text-core-de: #60A9CD;
+  --color-text-warning-le: #704B00;
+  --color-text-warning-de: #EFC87B;
+  --color-text-danger-le: #B31932;
+  --color-text-danger-de: #E37184;
+  --color-text-onaccentsv-le: #212429;
+  --color-text-onaccentsv-de: #212429;
+  --color-text-onaccentcv-le: #ffffff;
+  --color-text-onaccentcv-de: #ffffff;
+  --color-border-primary-le: #DFE2E7;
+  --color-border-primary-de: #494F57;
+  --color-border-secondary-le: #EDEFF2;
+  --color-border-secondary-de: #343940;
+  --color-border-core-le: #057AA8;
+  --color-border-core-de: #057AA8;
+  --color-border-coresubtle-le: #CAE5F2;
+  --color-border-coresubtle-de: #045777;
+  --color-border-success-le: #007E50;
+  --color-border-success-de: #007E50;
+  --color-border-successsubtle-le: #C2E5D8;
+  --color-border-successsubtle-de: #006943;
+  --color-border-warning-le: #E5A82E;
+  --color-border-warning-de: #E5A82E;
+  --color-border-warningsubtle-le: #F4DAA5;
+  --color-border-warningsubtle-de: #9D7320;
+  --color-border-danger-le: #D21D3B;
+  --color-border-danger-de: #D21D3B;
+  --color-border-dangersubtle-le: #F5CCD3;
+  --color-border-dangersubtle-de: #95152A;
+  --color-border-info-le: #057AA8;
+  --color-border-info-de: #057AA8;
+  --color-border-infosubtle-le: #CAE5F2;
+  --color-border-infosubtle-de: #045777;
+  --color-border-active-le: #057AA8;
+  --color-border-active-de: #057AA8;
+  --color-border-lightsubtle-le: #E7EAEE;
+  --color-border-lightsubtle-de: #494F57;
+  --color-border-darksubtle-le: #ADB4BD;
+  --color-border-darksubtle-de: #343940;
+  --color-border-accentcv-le: #F86816;
+  --color-border-accentcv-de: #F86816;
+  --color-border-accentsv-le: #CBDB29;
+  --color-border-accentsv-de: #CBDB29;
+  --color-icon-body-le: #2C3035;
+  --color-icon-body-de: #D6DBE1;
+  --color-icon-secondary-le: #6C737D;
+  --color-icon-secondary-de: #89909A;
+  --color-icon-tertiary-le: #ADB4BD;
+  --color-icon-tertiary-de: #6C737D;
+  --color-icon-oncore-le: #ffffff;
+  --color-icon-oncore-de: #ffffff;
+  --color-icon-onsuccess-le: #ffffff;
+  --color-icon-onsuccess-de: #ffffff;
+  --color-icon-onwarning-le: #212429;
+  --color-icon-onwarning-de: #212429;
+  --color-icon-ondanger-le: #ffffff;
+  --color-icon-ondanger-de: #ffffff;
+  --color-icon-oninfo-le: #ffffff;
+  --color-icon-oninfo-de: #ffffff;
+  --color-icon-oncoresubtle-le: #045777;
+  --color-icon-oncoresubtle-de: #98C9E2;
+  --color-icon-onsuccesssubtle-le: #006943;
+  --color-icon-onsuccesssubtle-de: #8FD3BA;
+  --color-icon-onwarningsubtle-le: #704B00;
+  --color-icon-onwarningsubtle-de: #F4DAA5;
+  --color-icon-ondangersubtle-le: #95152A;
+  --color-icon-ondangersubtle-de: #F5CCD3;
+  --color-icon-onlightsubtle-le: #494F57;
+  --color-icon-onlightsubtle-de: #F8F9FA;
+  --color-icon-ondarksubtle-le: #494F57;
+  --color-icon-ondarksubtle-de: #DFE2E7;
+  --color-icon-oninfosubtle-le: #045777;
+  --color-icon-oninfosubtle-de: #98C9E2;
+  --color-icon-onaccentsv-le: #212429;
+  --color-icon-onaccentsv-de: #212429;
+  --color-icon-onaccentcv-le: #ffffff;
+  --color-icon-onaccentcv-de: #ffffff;
+  --color-icon-core-le: #04688F;
+  --color-icon-core-de: #60A9CD;
+  --color-icon-success-le: #007E50;
+  --color-icon-success-de: #5EBC9A;
+  --color-icon-warning-le: #704B00;
+  --color-icon-warning-de: #EFC87B;
+  --color-icon-danger-le: #B31932;
+  --color-icon-danger-de: #E37184;
+  --color-rgb-body-le: 255,255,255;
+  --color-rgb-body-de: 33,36,41;
+  --color-rgb-secondary-le: 231,234,238;
+  --color-rgb-secondary-de: 52,57,64;
+  --color-rgb-tertiary-le: 248,249,250;
+  --color-rgb-tertiary-de: 44,48,53;
+  --color-rgb-core-le: 5,122,168;
+  --color-rgb-core-de: 5,122,168;
+  --color-rgb-success-le: 0,126,80;
+  --color-rgb-success-de: 0,126,80;
+  --color-rgb-danger-le: 210,29,59;
+  --color-rgb-danger-de: 210,29,59;
+  --color-rgb-warning-le: 229,168,46;
+  --color-rgb-warning-de: 229,168,46;
+  --color-rgb-info-le: 5,122,168;
+  --color-rgb-info-de: 5,122,168;
+  --color-rgb-brand-le: 2,50,70;
+  --color-rgb-brand-de: 2,50,70;
+  --color-rgb-accentsv-le: 203,219,41;
+  --color-rgb-accentsv-de: 203,219,41;
+  --color-rgb-accentcv-le: 248,104,22;
+  --color-rgb-accentcv-de: 248,104,22;
+  --text-font: Inter;
+  --text-heading-size-xxlarge: 40px;
+  --text-heading-size-xlarge: 32px;
+  --text-heading-size-large: 28px;
+  --text-heading-size-medium: 24px;
+  --text-heading-size-small: 20px;
+  --text-heading-size-xsmall: 16px;
+  --text-heading-lineheight-xsmall: 24px;
+  --text-heading-lineheight-small: 28px;
+  --text-heading-lineheight-medium: 32px;
+  --text-heading-lineheight-large: 36px;
+  --text-heading-lineheight-xlarge: 40px;
+  --text-heading-lineheight-xxlarge: 48px;
+  --text-body-size-medium: 16px;
+  --text-body-size-large: 18px;
+  --text-body-size-small: 14px;
+  --text-body-size-xsmall: 12px;
+  --text-body-lineheight-xsmall: 20px;
+  --text-body-lineheight-small: 20px;
+  --text-body-lineheight-medium: 24px;
+  --text-body-lineheight-large: 28px;
+  --text-body-large: [object Object];
+  --text-body-medium: [object Object];
+  --text-body-small: [object Object];
+  --text-body-xsmall: [object Object];
+  --text-body-caption: [object Object];
+  --text-caption-size: 10px;
+  --text-caption-lineheight: 16px;
+  --text-label-size-medium: 16px;
+  --text-label-size-large: 18px;
+  --text-label-size-small: 14px;
+  --text-label-size-xsmall: 12px;
+  --text-label-lineheight-xsmall: 16px;
+  --text-label-lineheight-small: 16px;
+  --text-label-lineheight-medium: 20px;
+  --text-label-lineheight-large: 24px;
+  --text-label-large: [object Object];
+  --text-label-medium: [object Object];
+  --text-label-small: [object Object];
+  --text-label-xsmall: [object Object];
+  --text-h1: [object Object];
+  --text-h2: [object Object];
+  --text-h3: [object Object];
+  --text-h4: [object Object];
+  --text-h5: [object Object];
+  --text-h6: [object Object];
+  --text-fontweight-regular: 400;
+  --text-fontweight-medium: 500;
+  --text-fontweight-bold: 600;
+  --space-100: 4px;
+  --space-150: 6px;
+  --space-200: 8px;
+  --space-300: 12px;
+  --space-400: 16px;
+  --space-500: 20px;
+  --space-600: 24px;
+  --space-800: 32px;
+  --space-1000: 40px;
+  --space-1200: 48px;
+  --space-1600: 64px;
+  --space-2000: 80px;
+  --space-2400: 96px;
+  --space-3200: 128px;
+  --space-025: 1px;
+  --space-050: 2px;
+  --border-width-0: 0;
+  --border-width-100: 4px;
+  --border-width-0165: 0.66px;
+  --border-width-025: 1px;
+  --border-width-050: 2px;
+  --border-radius-0: 0;
+  --border-radius-100: 4px;
+  --border-radius-150: 6px;
+  --border-radius-200: 8px;
+  --border-radius-300: 12px;
+  --border-radius-400: 16px;
+  --border-radius-500: 20px;
+  --border-radius-750: 30px;
+  --border-radius-050: 2px;
+  --border-radius-full: 9999px;
+  --button-primary-background-default-le: #057AA8;
+  --button-primary-background-default-de: #057AA8;
+  --button-primary-background-hover-le: #04688F;
+  --button-primary-background-hover-de: #04688F;
+  --button-primary-background-active-le: #045777;
+  --button-primary-background-active-de: #045777;
+  --button-primary-text-le: #ffffff;
+  --button-primary-text-de: #ffffff;
+  --button-primary-icon-le: #ffffff;
+  --button-primary-icon-de: #ffffff;
+  --button-secondary-background-default-le: #E7EAEE;
+  --button-secondary-background-default-de: #343940;
+  --button-secondary-background-hover-le: #D6DBE1;
+  --button-secondary-background-hover-de: #3F444B;
+  --button-secondary-background-active-le: #BDC3CB;
+  --button-secondary-background-active-de: #3F444B;
+  --button-secondary-text-le: #04688F;
+  --button-secondary-text-de: #60A9CD;
+  --button-secondary-icon-le: #04688F;
+  --button-secondary-icon-de: #60A9CD;
+  --button-success-background-default-le: #007E50;
+  --button-success-background-default-de: #007E50;
+  --button-success-background-hover-le: #006943;
+  --button-success-background-hover-de: #006943;
+  --button-success-background-active-le: #00472E;
+  --button-success-background-active-de: #00472E;
+  --button-success-text-le: #ffffff;
+  --button-success-text-de: #ffffff;
+  --button-success-icon-le: #ffffff;
+  --button-success-icon-de: #ffffff;
+  --button-danger-background-default-le: #D21D3B;
+  --button-danger-background-default-de: #D21D3B;
+  --button-danger-background-hover-le: #B31932;
+  --button-danger-background-hover-de: #B31932;
+  --button-danger-background-active-le: #95152A;
+  --button-danger-background-active-de: #95152A;
+  --button-danger-text-le: #ffffff;
+  --button-danger-text-de: #ffffff;
+  --button-danger-icon-le: #ffffff;
+  --button-danger-icon-de: #ffffff;
+  --button-link-background-default-le: rgba(0,0,0,0);
+  --button-link-background-default-de: rgba(0,0,0,0);
+  --button-link-background-hover-le: #E7EAEE;
+  --button-link-background-hover-de: #343940;
+  --button-link-background-active-le: #D6DBE1;
+  --button-link-background-active-de: #3F444B;
+  --button-link-text-primary-le: #04688F;
+  --button-link-text-primary-de: #60A9CD;
+  --button-link-text-success-le: #007E50;
+  --button-link-text-success-de: #5EBC9A;
+  --button-link-text-danger-le: #B31932;
+  --button-link-text-danger-de: #E37184;
+  --formcontrol-background-default-le: #F8F9FA;
+  --formcontrol-background-default-de: #2C3035;
+  --formcontrol-background-active-le: #ffffff;
+  --formcontrol-background-active-de: #212429;
+  --formcontrol-background-filled-le: #F8F9FA;
+  --formcontrol-background-filled-de: #2C3035;
+  --formcontrol-text-label-le: #212429;
+  --formcontrol-text-label-de: #DFE2E7;
+  --formcontrol-text-placeholder-le: #89909A;
+  --formcontrol-text-placeholder-de: #89909A;
+  --formcontrol-text-input-le: #212429;
+  --formcontrol-text-input-de: #DFE2E7;
+  --formcontrol-text-hint-default-le: #89909A;
+  --formcontrol-text-hint-default-de: #89909A;
+  --formcontrol-text-hint-sucess-le: #007E50;
+  --formcontrol-text-hint-sucess-de: #5EBC9A;
+  --formcontrol-text-hint-danger-le: #B31932;
+  --formcontrol-text-hint-danger-de: #E37184;
+  --formcontrol-icon-default-le: #89909A;
+  --formcontrol-icon-default-de: #89909A;
+  --formcontrol-icon-danger-le: #B31932;
+  --formcontrol-icon-danger-de: #E37184;
+  --formcontrol-icon-success-le: #007E50;
+  --formcontrol-icon-success-de: #5EBC9A;
+  --formcontrol-border-default-le: #DFE2E7;
+  --formcontrol-border-default-de: #494F57;
+  --formcontrol-border-active-le: #057AA8;
+  --formcontrol-border-active-de: #057AA8;
+  --height-0: 0px;
+  --height-100: 4px;
+  --height-150: 6px;
+  --height-200: 8px;
+  --height-300: 12px;
+  --height-400: 12px;
+  --height-500: 20px;
+  --height-600: 24px;
+  --height-700: 28px;
+  --height-800: 32px;
+  --height-900: 36px;
+  --height-1000: 40px;
+  --height-1200: 48px;
+  --height-1600: 64px;
+  --height-2000: 80px;
+  --height-2400: 96px;
+  --height-2800: 112px;
+  --height-3200: 128px;
+  --height-025: 1px;
+  --height-050: 2px;
+  --width-0: 0px;
+  --width-100: 4px;
+  --width-150: 6px;
+  --width-200: 8px;
+  --width-300: 12px;
+  --width-400: 12px;
+  --width-500: 20px;
+  --width-600: 24px;
+  --width-700: 28px;
+  --width-800: 32px;
+  --width-900: 36px;
+  --width-1000: 40px;
+  --width-1200: 48px;
+  --width-1600: 64px;
+  --width-2000: 80px;
+  --width-2400: 96px;
+  --width-2800: 112px;
+  --width-3200: 128px;
+  --width-025: 1px;
+  --width-050: 2px;
+  /* z-index for dropdown elements */
+  --zindex-1: 1000px;
+  /* z-index for sticky elements */
+  --zindex-2: 1020px;
+  /* z-index for fixed elements */
+  --zindex-3: 1030px;
+  /* z-index for off canvas backdrop */
+  --zindex-4: 1040px;
+  /* z-index for off canvas */
+  --zindex-5: 1045px;
+  /* z-index for modal backdrop */
+  --zindex-6: 1050px;
+  /* z-index for modals */
+  --zindex-7: 1055px;
+  /* z-index for popovers */
+  --zindex-8: 1070px;
+  /* z-index for tooltips */
+  --zindex-9: 1080px;
+  /* z-index for toasts */
+  --zindex-10: 1090px;
+  --shadow-0: none;
+  --shadow-100-le: 0px 1px 0px 0px rgba(26,26,26,0.07);
+  --shadow-100-de: 0px 1px 0px 0px rgba(0,0,0,0.24);
+  --shadow-200-le: 0px 3px 1px -1px rgba(26,26,26,0.07);
+  --shadow-200-de: 0px 3px 1px -1px rgba(0,0,0,0.24);
+  --shadow-300-le: 0px 4px 6px -2px rgba(26,26,26,0.2);
+  --shadow-300-de: 0px 4px 6px -2px rgba(0,0,0,0.32);
+  --shadow-400-le: 0px 8px 16px -4px rgba(26,26,26,0.22);
+  --shadow-400-de: 0px 8px 16px -4px rgba(0,0,0,0.32);
+  --shadow-500-le: 0px 12px 20px -8px rgba(26,26,26,0.24);
+  --shadow-500-de: 0px 12px 20px -8px rgba(0,0,0,0.34);
+  --shadow-600-le: 0px 20px 20px -8px rgba(26,26,26,0.28);
+  --shadow-600-de: 0px 20px 20px -8px rgba(0,0,0,0.38);
 }
